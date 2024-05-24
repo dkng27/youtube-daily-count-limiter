@@ -11,6 +11,7 @@ const newPageLoad = () => {
         { date: today, limit: 8, list: [] },
         (items) => {
             // debug line
+            console.log(items.date, items.list, items.limit)
             if (items.date !== today) {
                 chrome.storage.local.set(
                     {
@@ -32,8 +33,7 @@ const newPageLoad = () => {
                         {
                             list: list,
                             date: items.date
-                        },
-                        () => { console.log(items.date, items.list, items.limit) }
+                        }
                     )
                 }
             }

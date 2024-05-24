@@ -2,6 +2,8 @@
 
 This is a simple chrome extension that limits the number of videos you watch per day to avoid addiction.
 
+![screenshot](Screenshots/screenshot1.png) ![screenshot2](Screenshots/screenshot2.png)
+
 ### Why not just limit usage using screentime?
 Not all videos are made equal; If you limit YouTube usage by time, then for the same amount of time you may watch a ton of short videos, or a few longer videos. I believe the latter is less detrimental to one's attention span. In fact, one could argue certain long educational videos (such as online tutorials, topical video essays) should not be considered entertainment at all and should not be restricted to the same level as "top 10 funny cat" videos.
 
@@ -13,6 +15,8 @@ This is why the extension is built in a way that encourages viewer to watch more
 3. Number of watched videos will be cleared everyday
 4. Watching a video more than once will not count towards the quota
 
+### Installation
+Enable developer mode (upper right corner) under `chrome://extensions` and then drag the Extension folder into chrome window. This will load the unpacked extension.
 
 ### Todos:
 - [ ] Setting to ignore music videos (background listening)
