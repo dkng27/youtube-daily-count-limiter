@@ -1,0 +1,30 @@
+{
+    "name": "YouTube Watch Count Limter",
+    "version": "0.1",
+    "description": "limit the number of videos you watch daily",
+    "manifest_version": 3,
+    "permissions": [
+        "storage"
+    ],
+    "icons": {
+        "128": "icon.png"
+    },
+    "author": "dkng27",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "run_at": "document_end",
+            "js": [
+                "counter_script.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "128": "icon.png"
+        }
+    }
+}
