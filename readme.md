@@ -1,5 +1,6 @@
 ### Changelogs
 v0.2 (June 2024) - implemented ignoring long videos and bypass; new UI
+
 v0.1 (May 2024) - initial prototype with limit and reset count
 <hr>
 
@@ -7,10 +8,10 @@ v0.1 (May 2024) - initial prototype with limit and reset count
 
 This is a simple chrome extension that limits the number of videos you watch per day to avoid addiction.
 
-![screenshot](Screenshots/screenshot1.png) 
-The settings menu.
-![screenshot2](Screenshots/screenshot2.png)
-When you reach the limit.
+<img alt="settings" src="Screenshots/settings.png" width="300px">
+<p>The flyout settings page.</p>
+<img alt="block" src="Screenshots/block.png" width="300px">
+<p>The blocked screen with the bypass button.</p>
 
 ### Features
 1. Blocks youtube page after daily limit is reached
