@@ -1,21 +1,92 @@
-<html>
+<html lang="en">
 
 <head>
     <title>YouTube Daily Counter</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+            font-size: large;
+            text-align: center;
+        }
+
+        body {
+            height: fit-content;
+            width: 20rem;
+            display: grid;
+            grid-template-rows: 3rem 3rem 3rem 3rem 4rem 1rem;
+            align-items: center;
+        }
+
+        h1,
+        h4 {
+            text-align: center;
+        }
+
+        h1 {
+            color: darkred;
+        }
+
+        #status {
+            font-style: italic;
+            color: gray;
+            text-align: right;
+        }
+
+        input {
+            padding: 0.5rem;
+        }
+
+        input[type="number"] {
+            border-radius: 3px;
+            border: 1px solid gray;
+            width: 3rem;
+            text-align: right;
+        }
+
+        input[type="number"]:focus {
+            border: 1px solid darkred;
+            outline: none;
+            box-shadow: 0px 0px 2px 0.1px gray;
+        }
+
+        input[type="button"] {
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            box-shadow: 1px 1px 3px darkgray;
+            background-color: maroon;
+            color: white;
+        }
+
+        #buttons {
+            align-self: flex-end;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>YouTube Count Limiter</h1>
     <h4>
         <span id="watch-count"> </span>
         <span> video(s) watched today.</span>
     </h4>
     <div>
-        <div>Set limit:</div>
-        <input type="number" id="new-limit" min="1" max="128" placeholder="Enter a limit">
-        <button id="save-limit">Save</button>
+        Watch at most 
+        <input type="number" id="new-limit" min="1" max="99">
+        videos per day.
     </div>
     <div>
-        <input type="button" id="clear-watch-count" value="Reset count">
+        <input type="checkbox" id="bypass-check">
+        Ignore vids longer than
+        <input type="number" id="bypass-threshold" min="1" max="99">
+        mins
+    </div>
+    <div id="buttons">
+        <input type="button" id="save-limit" value="Save">
+        <input type="button" id="clear-watch-count" value="Reset Count">
     </div>
     <div id="status"></div>
     <script src="settings_script.js"></script>
