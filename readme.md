@@ -1,6 +1,7 @@
 ### Changelogs
 v0.2 (June 2024) - implemented ignoring long videos and bypass; new UI
 
+
 v0.1 (May 2024) - initial prototype with limit and reset count
 <hr>
 
