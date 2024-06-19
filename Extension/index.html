@@ -13,7 +13,7 @@
             height: fit-content;
             width: 20rem;
             display: grid;
-            grid-template-rows: 3rem 3rem 3rem 3rem 4rem 1rem;
+            grid-template-rows: 3rem 3rem 3rem 3rem 3rem 4rem 1rem;
             align-items: center;
         }
 
@@ -79,10 +79,14 @@
         videos per day.
     </div>
     <div>
-        <input type="checkbox" id="bypass-check">
+        <input type="checkbox" id="length-bypass-check">
         Ignore vids longer than
         <input type="number" id="bypass-threshold" min="1" max="99">
         mins
+    </div>
+    <div>
+        <input type="checkbox" id="allow-bypass-check">
+        Allow request to exceed limit
     </div>
     <div id="buttons">
         <input type="button" id="save-limit" value="Save">

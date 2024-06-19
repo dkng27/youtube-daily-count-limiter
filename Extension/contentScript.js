@@ -38,16 +38,7 @@ const newPageLoad = () => {
         },
         (config) => {
             // debug line
-            console.log(
-                config.date,
-                config.list,
-                config.limit,
-                config.bypassMinuteThreshold,
-                config.bypass,
-                getVideoMinuteLength() <= config.bypassMinuteThreshold
-                    ? "shorter"
-                    : "longer"
-            );
+            console.log(config);
             if (config.date !== today) {
                 chrome.storage.local.set({
                     list: [],
@@ -79,9 +70,6 @@ const newPageLoad = () => {
     );
 };
 
-if (document.readyState !== "loading") {
-    newPageLoad();
-} else {
-    document.addEventListener("DOMContentLoaded", newPageLoad);
-}
-document.addEventListener("yt-navigate-start", newPageLoad);
+document.addEventListener("DOMContentLoaded", newPageLoad)
+document.addEventListener("yt-navigate-start", newPageLoad)
+// document.addEventListener("yt-page-data-fetched", newPageLoad);

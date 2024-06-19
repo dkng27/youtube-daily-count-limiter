@@ -1,6 +1,6 @@
 {
-    "name": "YouTube Watch Count Limter",
-    "version": "0.2",
+    "name": "YouTube Watch Count Limiter",
+    "version": "0.3",
     "description": "limit the number of videos you watch daily",
     "manifest_version": 3,
     "permissions": [
